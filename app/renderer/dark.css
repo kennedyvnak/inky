@@ -1,121 +1,148 @@
+/* General Backgrounds */
 .window.dark #main,
 .window.dark #editor,
 .window.dark #editor .ace_gutter-layer,
 .window.dark .split {
-    background-color: #282828;
+  background-color: #1f1f2e;
+  /* Rose Pine Base */
 }
 
 .window.dark #toolbar {
-    background-color: #131313;
-    border-bottom: #131313;
+  background-color: #2f2f41;
+  /* Rose Pine Dawn */
+  border-bottom: #2f2f41;
 }
 
 .window.dark #main .sidebar,
 .window.dark #main .sidebar .footer {
-    background-color: #181818;
+  background-color: #262338;
+  /* Rose Pine Moon */
 }
 
+/* Titles and Text Colors */
 .window.dark h1.title {
-    color: white;
+  color: #f0d7f4;
+  /* Rose Pine Highlight */
 }
-
 
 .window.dark #main .sidebar .filename,
 .window.dark #main .sidebar .footer .add-include-button,
 .window.dark #main .sidebar .footer .new-include-form h5 {
-    color: #888;
+  color: #d4d2e3;
+  /* Soft Lavender */
 }
 
 .window.dark #main .sidebar .nav-group-item.active {
-    background: #1a292b;
+  background: #3b405c;
+  /* Rose Pine Highlight Dark */
 }
 
 .window.dark #main .sidebar .nav-group-item.active .filename {
-    color: #CCC;
+  color: #e0c6e8;
+  /* Light Lavender */
 }
 
 .window.dark #main .sidebar .nav-group-item.nav-tooltip {
-    color: #7b7b7b;
+  color: #b8b8c4;
+  /* Subtle Grey */
 }
 
 .window.dark #toolbar .button:hover .icon {
-    color: #999;
+  color: #b4a8d4;
+  /* Soft Purple */
 }
 
 .window.dark #toolbar .button.selected .icon {
-    color: #CCC;
+  color: #e0c6e8;
+  /* Light Lavender */
 }
 
-/* e.g. filename input */
+/* Inputs */
 .window.dark #main .sidebar .footer input {
-    background: #333;
-    border: 1px solid #888;
-    color: #888;
+  background: #3b405c;
+  /* Rose Pine Highlight Dark */
+  border: 1px solid #4c4a6e;
+  /* Slightly darker for contrast */
+  color: #d4d2e3;
+  /* Soft Lavender */
 }
 
 .window.dark #main .sidebar .footer .checkbox {
-    color: #888;
+  color: #d4d2e3;
+  /* Soft Lavender */
 }
 
 .window.dark #toolbar div.issuesSummary .issueCount {
-    color: #888;
+  color: #d4d2e3;
+  /* Soft Lavender */
 }
 
 .window.dark #main .sidebar .footer {
-    border-top: 1px solid #282828;
+  border-top: 1px solid #1f1f2e;
+  /* Rose Pine Base */
 }
 
-
+/* Editor Highlights */
 .window.dark .ace_editor .ace_marker-layer .ace_selection {
-    background-color: #444;
+  background-color: #59516d;
+  /* Muted Purple */
 }
 
 .window.dark .ace_editor .ace_marker-layer .ace_selected-word {
-    background-color: #999;
-    border-color: #dedede;
+  background-color: #8a7d99;
+  /* Light Lavender Highlight */
+  border-color: #b4a8d4;
+  /* Soft Purple */
 }
 
 .window.dark #editor,
 .window.dark #player,
 .window.dark .ace_editor .ace_cursor {
-    /*color: #f0f0f0; */
-    color: #faf1c6;
+  color: #f0d7f4;
+  /* Rose Pine Highlight */
 }
 
 .window.dark .ace_editor .ace_indent-guide {
-    opacity: .1;
+  opacity: .1;
 }
 
 .window.dark .ace_editor .ace_marker-layer .ace_active-line {
-    background-color: rgba(255, 255, 255, 0.05);
+  background-color: rgba(255, 255, 255, 0.05);
 }
 
 .window.dark #player hr {
-    border-top-color: #444;
+  border-top-color: #59516d;
+  /* Muted Purple */
 }
 
 .window.dark #player p.choice a:hover {
-    color: #999;
+  color: #e0c6e8;
+  /* Light Lavender */
 }
-
 
 .window.dark #player .innerText p.customInstruction {
-    border-top-color: rgb(179, 94, 94);
+  border-top-color: #f4b8d4;
+  /* Rose Pine Custom */
 }
 
+/* Error, TODO, Warning Highlights */
 .window.dark #editor .ace-error {
-    background: #580000
+  background: #e84f4f;
+  /* Rose Pine Red */
 }
 
 .window.dark #editor .ace_todo,
 .window.dark #editor .ace-todo {
-    background: #a97410;
-    color: #000000;
+  background: #f4b8d4;
+  /* Rose Pine Pink */
+  color: #000000;
+  /* Black Text */
 }
 
 .window.dark #editor .ace_warning,
 .window.dark #editor .ace-warning {
-    background: #0f3553;
+  background: #47668c;
+  /* Rose Pine Blue */
 }
 
 .window.dark .ace_editor span.ace_flow.ace_declaration,
@@ -125,47 +152,59 @@
 .window.dark .ace_editor span.ace_glue,
 .window.dark .ace_editor span.ace_include,
 .window.dark .ace_editor span.ace_external {
-    color:#6d9e8e;
+  color: #6d9e8e;
+  /* Soft Sage */
 }
 
 .window.dark .ace_editor span.ace_choice.ace_bullets,
 .window.dark .ace_editor span.ace_choice.ace_weaveBracket,
 .window.dark .ace_editor span.ace_gather.ace_bullets {
-    color: #ec3c2f;
+  color: #f4b8d4;
+  /* Rose Pine Pink */
 }
 
 .window.dark .ace_editor span.ace_var-decl,
 .window.dark .ace_editor span.ace_list-decl {
-    color: #ec3c2f;
+  color: #ec3c2f;
+  /* Bright Red */
 }
+
 .window.dark .ace_editor span.ace_logic:not(.ace_innerContent) {
-    color:#8eb865;
+  color: #b8d28d;
+  /* Soft Green */
 }
 
 .window.dark #main.hideTags .ace_editor span.ace_tag {
-    color: #282828;
+  color: #2f2f41;
+  /* Rose Pine Dawn */
 }
 
-
-/* Custom instructions, e.g. >>> */
+/* Custom Instructions */
 .window.dark .window.contrast .ace_editor span.ace_customInstruction {
-    color: #c36f6f;
+  color: #f4b8d4;
+  /* Rose Pine Pink */
 }
 
+/* Scrollbar */
 .window.dark ::-webkit-scrollbar {
-    width: .75rem;
-    background: #282828;
-    border-left: 1px solid #323232;
-  }
-  
+  width: .75rem;
+  background: #1f1f2e;
+  /* Rose Pine Base */
+  border-left: 1px solid #3b405c;
+  /* Rose Pine Highlight Dark */
+}
+
 .window.dark ::-webkit-scrollbar-thumb {
-    background: #323232;
+  background: #4c4a6e;
+  /* Muted Purple */
 }
 
 .window.dark .sidebar .nav-wrapper {
-    border-left: 1px solid #282828;
+  border-left: 1px solid #1f1f2e;
+  /* Rose Pine Base */
 }
 
 .window.dark .sidebar .nav-wrapper::-webkit-scrollbar-thumb {
-    background: #323232;
+  background: #4c4a6e;
+  /* Muted Purple */
 }

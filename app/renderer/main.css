@@ -72,17 +72,19 @@ h1.title {
   pointer-events: none;
 }
 
-.win32 #toolbar, .linux #toolbar {
+.win32 #toolbar,
+.linux #toolbar {
   height: 34px;
   background: white;
 }
 
-.win32 h1.title, .linux h1.title {
+.win32 h1.title,
+.linux h1.title {
   display: none;
 }
 
 #toolbar p.issuesMessage {
-  font-family: Helvetica, sans-serif;
+  font-family: "Inter", sans-serif;
   font-style: oblique;
   color: #BBB;
   font-size: 9pt;
@@ -97,7 +99,7 @@ h1.title {
 }
 
 #toolbar div.issuesSummary {
-  font-family: Helvetica, sans-serif;
+  font-family: "Inter", sans-serif;
   font-style: oblique;
   color: #BBB;
   font-size: 9pt;
@@ -108,11 +110,13 @@ h1.title {
   text-align: center;
   margin: 0 auto;
   max-width: 200px;
-  z-index: 1; /* On top of left/right buttons */
+  z-index: 1;
+  /* On top of left/right buttons */
   -webkit-app-region: no-drag;
 }
 
-.win32 #toolbar div.issuesSummary, .linux #toolbar div.issuesSummary {
+.win32 #toolbar div.issuesSummary,
+.linux #toolbar div.issuesSummary {
   top: 0;
 }
 
@@ -128,17 +132,21 @@ h1.title {
   vertical-align: middle;
   margin-top: -2px;
 }
+
 #toolbar div.issuesSummary .issueCount img.issue-icon.warning {
   margin-top: -3px;
 }
+
 img.issue-icon.error {
   width: 11px;
   height: 11px;
 }
+
 img.issue-icon.todo {
   width: 11px;
   height: 11px;
 }
+
 img.issue-icon.warning {
   width: 13px;
   height: 12px;
@@ -151,11 +159,13 @@ img.issue-icon.warning {
   background: none;
   bottom: 0;
 }
+
 #toolbar .buttons.left {
   left: 5px;
   right: 50%;
   text-align: left;
 }
+
 #toolbar .buttons.right {
   right: 5px;
   left: 50%;
@@ -176,9 +186,11 @@ img.issue-icon.warning {
   font-size: 16pt;
   color: gray;
 }
+
 #toolbar .button:hover .icon {
   color: dimgray;
 }
+
 #toolbar .button.selected .icon {
   color: black;
 }
@@ -187,6 +199,7 @@ img.issue-icon.warning {
 #toolbar .button.nav-back {
   margin-right: -3px;
 }
+
 #toolbar .button.nav-forward {
   margin-left: -3px;
 }
@@ -204,7 +217,8 @@ img.issue-icon.warning {
   -webkit-app-region: no-drag;
 }
 
-.win32  #toolbar .issue-popup, .linux #toolbar .issue-popup {
+.win32 #toolbar .issue-popup,
+.linux #toolbar .issue-popup {
   top: 35px;
 }
 
@@ -216,23 +230,29 @@ img.issue-icon.warning {
 #toolbar .issue-popup {
   border-radius: 6px;
 }
+
 #toolbar .issue-popup .row:first-child {
   border-top-left-radius: 6px;
   border-top-right-radius: 6px;
 }
+
 #toolbar .issue-popup .row:last-child {
   border-bottom-left-radius: 6px;
   border-bottom-right-radius: 6px;
 }
+
 #toolbar .issue-popup .row:first-child .col:first-child {
   border-top-left-radius: 6px;
 }
+
 #toolbar .issue-popup .row:first-child .col:last-child {
   border-top-right-radius: 6px;
 }
+
 #toolbar .issue-popup .row:last-child .col:first-child {
   border-bottom-left-radius: 6px;
 }
+
 #toolbar .issue-popup .row:last-child .col:last-child {
   border-bottom-right-radius: 6px;
 }
@@ -252,6 +272,7 @@ img.issue-icon.warning {
 #toolbar .issue-popup .row {
   border-bottom: 1px solid #E1E1E1;
 }
+
 #toolbar .issue-popup .row:last-child {
   border-bottom: none;
 }
@@ -282,7 +303,7 @@ img.issue-icon.warning {
   padding-left: 10px;
   padding-right: 26px;
   font-size: 11px;
-  font-family: Helvetica, sans-serif;
+  font-family: "Inter", sans-serif;
   line-height: 30px;
 }
 
@@ -336,7 +357,8 @@ img.issue-icon.warning {
   left: 0;
   right: 0;
   overflow: auto;
-  padding-bottom: 40px; /* leave space for include adding UI */
+  padding-bottom: 40px;
+  /* leave space for include adding UI */
   border-left: 1px solid #DDD;
 }
 
@@ -344,11 +366,12 @@ img.issue-icon.warning {
   display: none;
 }
 
-.sidebar, .sidebar * {
+.sidebar,
+.sidebar * {
   cursor: default;
 }
 
-.sidebar .nav-group-item.active .filename{
+.sidebar .nav-group-item.active .filename {
   font-weight: bold;
 }
 
@@ -515,7 +538,8 @@ img.issue-icon.warning {
   background: white;
 }
 
-.win32 #main, .linux #main {
+.win32 #main,
+.linux #main {
   top: 34px;
 }
 
@@ -526,11 +550,12 @@ img.issue-icon.warning {
   bottom: 0;
   left: 0;
   right: 50%;
+  font-family: "JetBrainsMono Nerd Font";
 }
 
 #editor .ace-error {
   background: #ffd1d1;
-  position:absolute;
+  position: absolute;
 }
 
 #editor .ace_gutter-cell.ace_error {
@@ -542,16 +567,20 @@ img.issue-icon.warning {
 
 #editor .ace-warning {
   background: #f2ad2b;
-  position:absolute;
+  position: absolute;
 }
 
-#editor .ace-todo {     /* issue from compiler */
-  position:absolute;
+#editor .ace-todo {
+  /* issue from compiler */
+  position: absolute;
 }
 
-#editor .ace-todo,      /* issue from compiler */
-#editor span.ace_todo   /* syntax highlighter */
-{
+#editor .ace-todo,
+/* issue from compiler */
+#editor span.ace_todo
+
+/* syntax highlighter */
+  {
   background: #bffff1;
 }
 
@@ -565,12 +594,12 @@ img.issue-icon.warning {
 }
 
 #editor .ace_tooltip {
-  font-family: Helvetica, sans-serif;
+  font-family: "Inter", sans-serif;
   padding: 7px;
   border: 1px solid #DDD;
   border-radius: 4px;
   background: #F8F8F8;
-  box-shadow: 0 3px 5px 0px rgba(0,0,0,0.1);
+  box-shadow: 0 3px 5px 0px rgba(0, 0, 0, 0.1);
 }
 
 #editor span.ace_divert.ace_target,
@@ -580,7 +609,7 @@ img.issue-icon.warning {
 
 /* Hide cursor in unfocussed editor view */
 .ace_hidden-cursors {
-  opacity:0
+  opacity: 0
 }
 
 /* Hide other marks (e.g. bracket matchers) in unfocussed editor view */
@@ -595,7 +624,7 @@ img.issue-icon.warning {
   bottom: 0;
   right: 0;
   left: 50%;
-  font-family: system-ui, -apple-system, Geneva, sans-serif;
+  font-family: "JetBrainsMono Nerd Font", -apple-system, Geneva, sans-serif;
   font-weight: 400;
   font-size: 14pt;
   color: #555;
@@ -613,7 +642,7 @@ img.issue-icon.warning {
 
 #player .innerText p.customInstruction {
   color: rgb(179, 94, 94);
-  font-family: Monaco, 'Courier New', monospace;
+  font-family: "ComicShannsMono Nerd Font", 'Courier New', monospace;
 }
 
 #player.altKey .innerText p span:hover {
@@ -655,10 +684,11 @@ img.issue-icon.warning {
   text-decoration: underline;
 }
 
-#player p.tags, #player p.choice .tags {
+#player p.tags,
+#player p.choice .tags {
   color: #AAA;
   text-align: center;
-  font-family: monospace;
+  font-family: "ComicShannsMono Nerd Font";
 }
 
 #player p.choice .tags {
@@ -667,7 +697,7 @@ img.issue-icon.warning {
 
 #main.hideTags #player p.tags,
 #main.hideTags #player p.choice .tags {
-    display: none;
+  display: none;
 }
 
 #player p.end {
@@ -675,7 +705,8 @@ img.issue-icon.warning {
   text-align: center;
 }
 
-#player p.error, #player p.error a {
+#player p.error,
+#player p.error a {
   font-weight: bold;
   color: #C56D6D;
   font-size: 10pt;
@@ -697,6 +728,7 @@ img.issue-icon.warning {
 #player pre.error {
   color: #C56D6D;
 }
+
 #player pre.diagnostic {
   color: gray;
 }
@@ -788,7 +820,7 @@ img.issue-icon.warning {
 /* Toolbar buttons and spinner */
 
 .button {
-  font-family: Verdana, Geneva, sans-serif;
+  font-family: "Inter Display", Geneva, sans-serif;
   font-size: 10pt;
   color: #444;
   width: 100px;
@@ -825,10 +857,11 @@ img.issue-icon.warning {
   border: 1px solid #DDD;
   border-radius: 10px;
   box-shadow: 0 5px 6px #EEE;
-  z-index: 80; /* toolbar is 50, title bar is 100 */
+  z-index: 80;
+  /* toolbar is 50, title bar is 100 */
   opacity: 1.0;
   padding: 10px;
-  font-family: Monaco, sans-serif;
+  font-family: "ComicShannsMono Nerd Font", sans-serif;
   transition: opacity 0.3s;
 }
 
@@ -904,7 +937,8 @@ img.issue-icon.warning {
   right: 0;
   bottom: 0;
   background: none;
-  z-index: 60; /* toolbar is 50, title bar is 100, goto anything is 80 */
+  z-index: 60;
+  /* toolbar is 50, title bar is 100, goto anything is 80 */
 }
 
 #goto-anything .ancestor {
